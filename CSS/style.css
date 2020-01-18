@@ -1,0 +1,212 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+:root {
+    --orange-color:#f18119;
+    --bbq-title-color:#404040;
+    --font-color:#fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1rem;
+    color: #404040;
+    text-align:center;
+}
+
+h1 {
+    font-size:2.25rem;
+    font-weight:300;
+    color:var(--font-color);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h1 + p {
+    color:var(--orange-color);
+    font-size:1.3125rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+h2 + p {
+    font-size:1rem;
+    font-weight:700;
+    color:var(--orange-color);
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.top-text {
+    font-size:0.625rem;
+    font-weight:900;
+    color:var(--orange-color);
+    text-transform: uppercase;
+    order: -1;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    padding-top:2px;
+    border-top:0.5em solid var(--orange-color);
+    border-image:linear-gradient(to left, #ff713b, #ffa51d)1;
+}
+
+.fine-print {
+    font-size:0.625rem;
+    letter-spacing:1px;
+}
+strong {
+    font-weight:900;
+}
+
+.register-btn {
+    text-transform: uppercase;
+}
+
+/* =================
+   Intro section
+   ================= */
+
+.intro {
+    background-color: var(--bbq-title-color);
+    background-image: url("../images/dark-ribs.jpg ");
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:50vh;
+
+}
+.intro > *,
+.main-content > * {
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =================
+   main-content section
+   ================= */
+
+.main-content {
+    padding:2em 1em;
+}
+
+/* =================
+   Form section
+   ================= */
+
+.register-form {
+    width: 80%;
+    max-width:300px;
+
+}
+
+input,
+.register-btn {
+    width: 100%;
+    border-radius:5px;
+}
+input {
+    margin-bottom: .75em;
+    font-family:inherit;
+    text-align:inherit;
+    padding:.25em;
+    border:1px solid #404040;
+    transform:scale(1);
+    transition: transform 200ms;
+}
+input:focus {
+    transform:scale(1.1);
+}
+.register-btn {
+    background:linear-gradient(to left, #ff713b, #ffa51d);
+    color: #fff;
+    letter-spacing: 1px;
+    padding:1em 1.5em;
+    font-size:0.625rem;
+    font-weight: 900;
+    border: 0;
+    cursor:pointer;
+    transition:transform 200ms;
+}
+.register-btn:hover,
+.register-btn:focus
+{
+    transform:scale(1.1);
+}
+/* =================
+   media queries section
+   ================= */
+
+@media (min-width:501px) {
+    body {
+        font-size:1.125rem;
+        display: flex;
+    }
+    .container {
+        display: flex;
+    }
+    h1 {
+        font-size:3.5rem;
+    }
+    h2,
+    h1 + p {
+        font-size:1.75rem;
+    }
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .register-form input,
+    .register-btn {
+        font-size: 1rem;
+    }
+    .intro > *,
+    .main-content > * {
+        max-width: 435px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
